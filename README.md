@@ -3,8 +3,8 @@
 
 Sample scripts to run ORPO or Next best sentence which will fine-tune a model to allow chat-like interactions. Requires a Preference Dataset (prompt-accepted-rejected) triplet per row.
 
-Sample data used: [Kukedlc/dpo-orpo-spanish-15k](https://huggingface.co/datasets/Kukedlc/dpo-orpo-spanish-15k)
-Base model fine-tuned: [flax-community/gpt-2-spanish](https://huggingface.co/flax-community/gpt-2-spanish)
+- Sample data used: [Kukedlc/dpo-orpo-spanish-15k](https://huggingface.co/datasets/Kukedlc/dpo-orpo-spanish-15k)
+- Base model fine-tuned: [flax-community/gpt-2-spanish](https://huggingface.co/flax-community/gpt-2-spanish)
 
 # Setup
 ```bash
