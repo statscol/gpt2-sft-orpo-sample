@@ -17,6 +17,8 @@ if using uv, add the --env-file=.env args
 
     `uv run --env-file=.env train_orpo.py`
 
+    If using **DDP** run with accelerate `uv add accelerate` and run with `uv run --env-file=.env accelerate launch train_orpo.py`
+
 - Running SFT Training
 
     `uv run run --env-file=.env train_sft.py`
