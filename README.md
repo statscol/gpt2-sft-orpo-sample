@@ -6,13 +6,15 @@ Sample scripts to run ORPO or Next best sentence which will fine-tune a model to
 
 # Setup
 ```bash
-pip install uv && uv sync
+pip install uv && uv add -r requirements.txt #or use pip install -r requirements.txt
 ```
 
-- Running ORPO Training
+if using uv, add the --env-file=.env args
 
-    `uv run train_orpo.py`
+- Running ORPO Training, 
+
+    `uv run --env-file=.env train_orpo.py`
 
 - Running SFT Training
 
-    `uv run train_sft.py`
+    `uv run run --env-file=.env train_sft.py`
