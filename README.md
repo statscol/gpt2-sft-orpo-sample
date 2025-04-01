@@ -1,10 +1,11 @@
 ## Fine-tuning Decoder-models for Chat.
 
 
-Sample scripts to run ORPO or Next best sentence which will fine-tune a model to allow chat-like interactions. Requires a Preference Dataset (prompt-accepted-rejected) triplet per row.
+Sample scripts to run SFT or ORPO to allow chat-like interactions in a decoder-only model like GPT-2. Requires a Preference Dataset for ORPO (prompt-accepted-rejected) triplet per row, Or a Completion Dataset just for SFT (Prompt+Completion|Response)
 
-- Sample data used: [Kukedlc/dpo-orpo-spanish-15k](https://huggingface.co/datasets/Kukedlc/dpo-orpo-spanish-15k)
-- Base model fine-tuned: [flax-community/gpt-2-spanish](https://huggingface.co/flax-community/gpt-2-spanish)
+- Preference dataset tested: [mlabonne/orpo-dpo-mix-40k](https://huggingface.co/datasets/mlabonne/orpo-dpo-mix-40k)
+- Completion dataset tested: [mtimur/distill-gpt4-eng-chat](https://huggingface.co/datasets/mtimur/distill-gpt4-eng-chat)
+- Base model fine-tuned: [openai-community/gpt2-large](https://huggingface.co/openai-community/gpt2-large)
 
 # Setup
 ```bash
@@ -21,4 +22,4 @@ if using uv, add the --env-file=.env args
 
 - Running SFT Training
 
-    `uv run run --env-file=.env train_sft.py`
+    `uv run --env-file=.env train_sft_peft.py`
