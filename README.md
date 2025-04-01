@@ -1,4 +1,4 @@
-## Fine-tuning Decoder-models for Chat.
+## Fine-Tuning Decoder-Only Models for Chat-Like Interactions
 
 
 Sample scripts to run SFT or ORPO to allow chat-like interactions in a decoder-only model like GPT-2. Requires a Preference Dataset for ORPO (prompt-accepted-rejected) triplet per row, Or a Completion Dataset just for SFT (Prompt+Completion|Response)
